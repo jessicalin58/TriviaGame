@@ -2,11 +2,11 @@
 
 var questions = {
 
-	q1: ["Q1. Marble is primarily white but can come in other colors as well.", "t"],
-	q2: ["Q2. Back in ancient times, you could easily tell where a piece of marble came from by looking at its color.", "t"],
-	q3: ["Q3. Marble has been used to make statues and provide flooring since ancient times.", "t"],
-	q4: ["Q4. The Empire States in New York is made entirely of marble", "f"],
-	q5: ["Q5. Marble is a type of foliated metamorphic rock, which are rocks that can be modified by heat, pressire, and chemical processes", "f"]
+  q1: ["Q1. Marble is primarily white but can come in other colors as well.", "t"],
+  q2: ["Q2. Back in ancient times, you could easily tell where a piece of marble came from by looking at its color.", "t"],
+  q3: ["Q3. Marble has been used to make statues and provide flooring since ancient times.", "t"],
+  q4: ["Q4. The Empire States in New York is made entirely of marble", "f"],
+  q5: ["Q5. Marble is a type of foliated metamorphic rock, which are rocks that can be modified by heat, pressire, and chemical processes", "f"]
 }
 
 var score = 0;
@@ -23,7 +23,7 @@ var questionsArray = [questions.q1, questions.q2, questions.q3, questions.q4, qu
 //UPDATE SCORE
 
 function updateScore() {
-	document.querySelector("#score").innerHTML = "Score: " + score;
+  document.querySelector("#score").innerHTML = "Score: " + score;
 }
 
 //FUNCTIONS
