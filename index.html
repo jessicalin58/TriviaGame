@@ -6,48 +6,81 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 
 </head>
 <body>
 
-<body style="background-image: url(assets/images/marble-06.png)">
 
+<!--NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+       
+      </button>
+      <a class="navbar-brand" href="#">Marble Trivia Game</a>
+    </div>
 
-<h1> // MARBLE TRIVIA </h1>
-
-<h2> <span><p id="questions">a game for marble rock aficionados</span> </p></h2>
-
-
-
-
-
-<!--<p><input type="text" value="#Type: Start"></p>-->
-<!--<form>
-
-	<div class="form-group">
-	<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Press S to Start">
-	</div>
-</form>
-
-	<div class="form-group">
-<form action="javascript:alert( 'hORRAy!' );">
-  <div>
-    <input type="text" placeholder="#Type 's' to Start">
-    <input type="submit" style="display:none"/>
   </div>
-</form>-->
-
-<div class="form-group">
-
-<div id=progressBar">
-
-<p id="score"></p>
-</div>
+</nav>
 
 
+<!--JUMBOTRON-->
 
-<script src="assets/javascript/app.js"></script>
+<div class="container">
+  <div class="row"> 
+    <div class="col-sm-8">
+
+      <div class="jumbotron">
+            
+            <p id="instructions"> </p>
+            <em><h5 id="instructions2"> </h5></em>
+
+            <p id="questions"></p>
+              <p class="text-success" id="results"></p>
+              <p class="text-danger" id="wrongResults"></p>
+
+            <a href="#" class="btn btn-default" id="start">Start Game</a>
+            <a href="https://jessicalin58.github.io/TriviaGame/" class="btn btn-default" id="restart">Restart Game</a>
+                
+          </a>
+
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+
+        <div class="panel panel-default">
+        <div class="panel-heading">Status</div>
+         <div class="panel-body"> 
+          <p id="score"></p>
+          <p>Time Left:<p class="text-danger" id="display"></p></p>
+
+          <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-danger" style="width: 100%"></div>
+         </div>
+
+       
+    </div>
+    </div>
+    </div>
+
+  </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+
+
 </body>
 </html>
